@@ -1,0 +1,76 @@
+@import url(default.css);
+@import url(font.css);
+/*웹폰트를 사용할 경우 그 폰트가 이용자의 컴퓨터에 설치되어 있으면
+그 폰트를 먼저 불러와서 적용하도록 함(그게 홈페이지 로딩 속도가 빠름)
+그리고 폰트가 없는 경우에만 내가 지정한 이름의 웹폰트를 부름(기본 폰트명과 이름을 일부러 좀 다르게 셋팅함)
+웹폰트 적용이 불가할때 사용함. 기본 시스템 폰트도 정의해야함.굴림,돋움,궁서 가능 (맑은 고딕은window7부터 가능하고 모바일을 불가함.)*/
+
+/*기본 설정*/
+:root{
+    --black-color: #2d2d2d;
+    --green-color: #8dc63f;
+    --orange-color: #e28b1f;
+    --white-color: #fff;
+}
+
+/*기본글꼴*/
+body{ 
+    font-family: 'NS'; font-size:16px; color:#484847; font-weight:300; letter-spacing:-0.04em;
+    overflow-x: hidden;
+}
+
+.wrap {width:1200px;margin:0 auto;} /*콘텐츠 영역-넓이*/
+@media screen and (max-width:640px){
+	.wrap {width:auto;margin:0 5%;}
+}
+
+header .wrap{ position: relative;}
+header .wrap .menu_wrap {
+    position: absolute; 
+    top: 55px; 
+    display: flex;
+    justify-content: space-between;
+    width: 100%; height: 78px;
+    background-color: #fff;
+    align-items: center;
+}
+header .wrap .menu_wrap .logo{ padding-left: 25px; }
+header .wrap .menu_wrap .logo a img{display: block;}
+header .wrap .gnb_pc ul{ display: flex; }
+header .wrap .gnb_pc ul li a { font-size: 18px; font-weight: 800; position: relative;  z-index: 5; display: block; text-align: center; color: var(--black-color); width: 142px;}
+header .wrap .gnb_pc ul li a:hover{ color: var(--green-color); }
+header .wrap .gnb_pc ul li a:hover::after{ 
+    content: '';
+    position: absolute;
+    bottom: -30px; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 53px; height: 3px;
+    background-color: var(--green-color);
+}
+header .wrap .gnb_pc ul li ul{display: none;}
+header .wrap .gnb_pc ul:hover li ul{
+    display: block;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height:415px;
+    padding-top:28px;
+}
+
+header .wrap .gnb_pc ul li ul li a{ font-size: 16px; font-weight: 400; line-height:25px; display:block; }
+header .wrap .gnb_pc ul li ul li a:hover::after{background: none; width: 0; height: 0;}
+
+header .wrap .menu_wrap .gnb_pc .gnb_bg{ 
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%; height: 415px;
+    background-color: rgba( 255, 255, 255);
+}
+header .wrap .menu_wrap .gnb_mobile{display: none;}
+
+@media screen and (max-width:640px){
+	header .wrap .menu_wrap .gnb_pc{display: none;}
+    header .wrap .menu_wrap .gnb_mobile{display: block; padding-right: 30px;}
+}

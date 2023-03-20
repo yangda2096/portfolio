@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="noevent.js" defer></script>
+    <script src="tap.js" defer></script>
+    <title>세브란스병원</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="wrap">
+                <h1>
+                    <a href="#"><img src="img/logo.png" alt="세브란스병원"></a>
+                </h1>
+                <nav>
+                    <ul class="gnb-menu">
+                        <li><a href="#">환자/보호자</a></li>
+                        <li><a href="#">의료인</a></li>
+                        <li><a href="#">공감Story</a></li>
+                        <li><a href="#">건강정보</a></li>
+                    </ul>
+                    <div class="icons">
+                        <button class="all-menu"><img src="img/all_menu.png" alt="메뉴오픈 아이콘"></button>
+                        <button class="search"><img src="img/search.png" alt="검색 아이콘"></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="top-menu">
+            <div class="wrap">
+                <a href="#" class="login"><img src="img/login.png" alt="로그인 아이콘"></a>
+                <a href="#" class="join"><img src="img/join.png" alt="조인 아이콘"></a>
+                <button class="lang">KO</button>
+            </div>
+        </div>
+    </header>
+
+    <!--메인 visual-->
+    <section class="main-visual">
+        <div class="wrap">
+            <h2><strong>공감,</strong>또 하나의 치료</h2>
+            <p>환자의 마음까지 치유하겠습니다.</p>
+        </div>
+    </section>
+
+    <!--세브란스 병원-->
+    <section class="shortcut">
+        <div class="title">
+            <div class="wrap">
+                <h2>세브란스 병원</h2>
+                <p class="sub-title">환자의 마음까지 치유하겠습니다.</p>
+            </div>
+        </div>
+        <!--탭메뉴-->
+        <div class="tap-menu">
+            <div class="wrap">
+                <ul>
+                    <li onclick="tab01();" id="tab01">
+                        <a>
+                            <i class="icon01"></i>
+                            <span>연세암병원</span>
+                        </a>
+                        <div class="tap-cts">
+                            <img src="img/img01.png" alt="안과 진료 사진">
+                            <div>
+                                <p class="title">연세암병원</p>
+                                <p>'오직 환자를 위한 마음'<br />첫 마음 그대로,국내 <br />최고의 암병원으로 도약합니다.</p>
+                                <a href="#">바로가기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li onclick="tab02();" id="tab02">
+                        <a>
+                            <i class="icon02"></i>
+                            <span>심장혈관병원</span>
+                        </a>
+                        <div class="tap-cts">
+                            <img src="img/img02.png" alt="심장혈관병원 진료 사진">
+                            <div>
+                                <p class="title">심장혈관병원</p>
+                                <p>For your Heart, 정확한 판단과<br />빠른 치료로 당신의 심장을<br />지키겠습니다.</p>
+                                <a href="#">바로가기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li onclick="tab03();" id="tab03">
+                        <a>
+                            <i class="icon03"></i>
+                            <span>어린이병원</span>
+                        </a>
+                        <div class="tap-cts">
+                            <img src="img/img03.png" alt="어린이병원 진료 사진">
+                            <div>
+                                <p class="title">어린이병원</p>
+                                <p>자상한 치료의 손길로<br /> 어린이와 청소년에게<br /> 최선을 다하겠습니다.</p>
+                                <a href="#">바로가기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="on" onclick="tab04();" id="tab04">
+                        <a>
+                            <i class="icon04"></i>
+                            <span>안과병원</span>
+                        </a>
+                        <div class="tap-cts">
+                            <img src="img/img04.png" alt="안과 진료 사진">
+                            <div>
+                                <p class="title">안과병원</p>
+                                <p>마취과, 신경외과의<br />분야별 안구 전문가가<br/>운영하고 있습니다.</p>
+                                <a href="#">바로가기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li onclick="tab05();" id="tab05">
+                        <a>
+                            <i class="icon05"></i>
+                            <span>재활병원</span>
+                        </a>
+                        <div class="tap-cts">
+                            <img src="img/img05.png" alt="재활병원 진료 사진">
+                            <div>
+                                <p class="title">재활병원</p>
+                                <p>새로운 재활치료의<br />패러다임을 제시하는<br/>최고의 병원입니다.</p>
+                                <a href="#">바로가기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--바로가기-->
+        <div class="shortcut-btn">
+           <div class="wrap">
+                <ul>
+                    <li><a href="../severance02/contents/h_search.html">
+                        <div class="cts">
+                            <strong>의료진 찾기</strong>
+                            <p>전문 의료진을 빠르게 <br/>찾을 수 있습니다.</p>
+                            <span>바로가기</span>
+                        </div>
+                    </a></li>
+                    <li><a>
+                        <div class="cts">
+                            <strong>증명서발급</strong>
+                            <p>언제, 어디서든 인터넷<br />발급이 가능합니다.</p>
+                            <span>바로가기</span>
+                        </div>
+                    </a></li>
+                    <li><a href="../severance02/contents/e_guide.html">
+                        <div class="cts">
+                            <strong>건강검진안내</strong>
+                            <p>건강검진을<br />안내해드립니다.</p>
+                            <span>바로가기</span>
+                        </div>
+                    </a></li>
+                    <li><a href="../severance02/contents/r_guide.html">
+                       <div class="cts">
+                            <strong>진료예약</strong>
+                            <p>회원/비회원 편리하게<br />예약할 수 있습니다.</p>
+                            <span>바로가기</span>
+                       </div>
+                    </a></li>
+                    <li><a>
+                        <div class="cts">
+                            <strong>진료과 찾기</strong>
+                            <p>진료 전 진료과를<br />안내해 드립니다.</p>
+                            <span>바로가기</span>
+                        </div>
+                    </a></li>
+                    <li><a>
+                        <div class="cts">
+                            <strong>예약현황</strong>
+                            <p>회원/비회원 예약 내역을<br />확인 할 수 있습니다.</p>
+                            <span>바로가기</span>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="wrap">
+            <h2>NEWS</h2>
+            <div class="sub-wrap">
+                <p class="sub-title">세브란스병원의 정보를 안내드립니다.</p>
+                <div class="btn-wrap">
+                    <button class="on">뉴스</button>
+                    <button>공지</button>
+                    <button>공고</button>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#">
+                    <div class="cts-box">
+                        <p class="title">[뉴스포커스] 정부 "거리두기 개편안, 여러 의견 수렴 중"</p>
+                        <p class="cts">어제 하루 코로나19 신규 확진자가 440명 발생하며 사흘 만에 다시 ...</p>
+                        <p class="date">21.01.02</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="cts-box">
+                        <p class="title">[뉴스포커스] 정부 "거리두기 개편안, 여러 의견 수렴 중"</p>
+                        <p class="cts">어제 하루 코로나19 신규 확진자가 440명 발생하며 사흘 만에 다시 ...</p>
+                        <p class="date">21.01.02</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="cts-box">
+                        <p class="title">[뉴스포커스] 정부 "거리두기 개편안, 여러 의견 수렴 중"</p>
+                        <p class="cts">어제 하루 코로나19 신규 확진자가 440명 발생하며 사흘 만에 다시 ...</p>
+                        <p class="date">21.01.02</p>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="top">
+            <div class="wrap">
+                <div class="familysite">
+                    <ul>
+                        <li><a href="#">세브란스병원</a></li>
+                        <li><a href="#">치과대학병원</a></li>
+                        <li><a href="#">강남세브란스병원</a></li>
+                        <li><a href="#">용인세브란스병원</a></li>
+                    </ul>
+                </div>
+                <div class="sns_list">
+                    <a href="#" class="faceBook"><img src="../severance02/img/ico-sns-gray-fb.png" alt=""></a>
+                    <a href="#" class="youtube"><img src="../severance02/img/ico-sns-gray-yt.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+           <div class="wrap">
+                <div class="shortcut-link"></div>
+                <div class="site-info">
+                    <ul class="policy-list">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                        <li><a href="#">병원소개</a></li>
+                    </ul>
+                    <address>
+                        <p>03722 서울특별시 서대문구 연세로 50-1</p>
+                        <p class="copyright">COPYRIGHT(C) SEVERANCE HOSPITAL. ALL RIGHTS RESERVED.</p>
+                    </address>
+                </div>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>

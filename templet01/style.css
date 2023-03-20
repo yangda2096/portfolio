@@ -1,0 +1,318 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');*/
+@import url(font.css);
+
+*{padding: 0; margin: 0;}
+ul, li{list-style: none;}
+a{text-decoration: none;}
+
+body{
+    font-family: 'Work Sans';
+    letter-spacing: -1.0px;
+}
+/*공통*/
+h2{
+    text-align: center; 
+    font-weight: 500; 
+    color: #575757;
+    padding-top: 105px;
+}
+
+/*header*/
+header{
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: #fff;
+}
+
+/*visual*/
+.visual{
+    background: #f6f6f6 url(images/visual_img.png) no-repeat top center;
+    background-size: cover;
+    height: 460px;
+    text-align: center;
+}
+
+.visual h2{
+    color: #10cab7;
+    font-size: 55.43px;
+    padding-top: 55px;
+    padding-bottom: 65px;
+}
+.visual p{
+    color: #2c4755;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 500;
+}
+
+/*icons*/
+.icons ul{display: flex; flex-wrap: wrap; justify-content: space-between;padding-right: 5px;}
+.icons ul li{
+    width: 33.3%; max-height: 400px;
+    text-align: center;
+    padding: 75px 0 0 0;
+}
+.icons ul li:hover{ box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2); transition: 0.3s;}
+
+.icons ul li i{
+    display: block;
+    width: 72px; height: 72px;
+    margin: 0 auto;
+}
+.icons ul li:nth-child(1) i{background: url(images/idea_icon.png);}
+.icons ul li:nth-child(2) i{background: url(images/work_icon.png);}
+.icons ul li:nth-child(3) i{background: url(images/world_icon.png);}
+.icons ul li strong{
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+.icons ul li p{
+    width: 300px;
+    display: inline-block;
+    line-height: 30px;
+    margin-bottom: 65px;
+}
+
+
+/*services*/
+.services{
+    width: 1160px; margin: 0 auto;
+    padding-bottom: 158px;
+}
+.services h2{
+    background: url(images/services.png) no-repeat center center; 
+    margin-bottom: 140px;
+}
+.services .contents{display: flex;}
+.services .left{}
+.services .left ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 760px;
+}
+.services .left ul li{
+    display: flex;
+    width: 42%;
+    margin-right: 60px;
+}
+.services .left ul li .icon{
+    margin-right: 50px;
+}
+.services .left ul li .icon i{
+    display: block;
+    width: 42px; height: 37px;
+}
+.services .left ul li:nth-child(1) i{background: url(images/services_icon_1.png) no-repeat center center;}
+.services .left ul li:nth-child(2) i{background: url(images/services_icon_2.png) no-repeat center center;}
+.services .left ul li:nth-child(3) i{background: url(images/services_icon_3.png) no-repeat center center;}
+.services .left ul li:nth-child(4) i{background: url(images/services_icon_4.png) no-repeat center center;}
+
+.services .left ul li:nth-child(3),.services .left ul li:nth-child(4){padding-top: 15px;}
+
+.services .right{position: relative;}
+.services .right img{
+    width: auto;
+    height: 330px;
+    position: relative;
+}
+.services .right::before{
+    content: '';
+    position: absolute;
+    top: -52px; right: -40px;
+    display: inline-block;
+    width: 100px; height: 435px;
+    background-color: #2c4755;
+}
+/*portfolio*/ 
+.portfolio{
+    background-color: #fafafa;
+    padding: 75px 180px 170px 180px;
+    text-align: center;
+    
+}
+.portfolio h2{
+    background: url(images/portfolio.png) no-repeat center center; 
+    padding-bottom: 45px;
+    margin-bottom: 95px;
+    align-items: center;
+}
+
+.portfolio ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.portfolio ul li{
+    margin-right: 40px;
+    text-align: left;
+    width: 500px;
+}
+.portfolio ul li:last-child{
+    margin-right: 0;
+}
+.portfolio ul li a{}
+.portfolio ul li a.img{
+    background: #cfcfcf ;
+    display: block;
+    width: 100%; height: 370px;
+}
+
+
+.portfolio ul li:nth-child(1) a.img{background: url(images/portfolio_01.png) no-repeat center center;}
+.portfolio ul li:nth-child(2) a.img{background: url(images/portfolio_02.png) no-repeat center center;}
+.portfolio ul li:nth-child(3) a.img{background: url(images/portfolio_03.png) no-repeat center center;}
+
+.portfolio ul li .txt_box{
+    background-color: #fff;
+    padding: 25px 30px;
+}
+.portfolio ul li .txt_box strong{
+    font-size: 20px;
+    display: block;
+    margin-bottom: 15px;
+}
+.portfolio ul li .txt_box p{
+    line-height: 25px;
+}
+
+/*about*/
+.about{
+    padding: 90px 0 130px 0;
+    text-align: center;
+}
+.about h2{
+    background: url(images/about.png) no-repeat center center; 
+    margin-bottom: 140px;
+}
+.about .contents {
+    display: flex;
+    justify-content: center;
+}
+
+
+.about .contents .left{position: relative;}
+.about .contents .left .left_img{
+    position: relative;
+    z-index: 5;
+}
+.about .contents .left img{
+   
+    display: block;
+    width: 300px; height: 330px;
+    background-color: #cfcfcf;
+    box-shadow: -3px 6px 9px rgb(0 0 0 / 6%);
+}
+
+.about .contents .left span{
+    position: absolute;
+    top: 0;
+    right: 0; z-index: 1;
+    display: block;
+    background-color: #10cab7;
+}
+
+.about .contents .left span.color_line{
+    position: relative;
+    z-index: 1;
+}
+.about .contents .left span.color_line01{
+    top: -62px; left: -13px;
+    width: 110px; height: 450px;
+    background-color: #fafafa;
+}
+.about .contents .left span.color_line02{
+    width: 90px; height: 290px;
+    top: -25px;
+    right: -35px;
+}
+
+.about .contents .left span.color_line03{
+    width: 190px; height: 90px;
+    top: 195px;
+    right: -135px;
+}
+
+.about .contents .right{
+    display: inline-block;
+    margin-left: 280px;
+    text-align: left;
+    width: 565px;
+   
+}
+.about .contents .right strong{
+    position: relative;
+    display: block;
+    font-size: 20px;
+    padding-bottom: 58px;
+    letter-spacing: 1px;
+}
+.about .contents .right strong::before{
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 270px; height: 1px;
+    background-color: #10cab7;
+}
+.about .contents .right p{
+    margin-top: 25px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+/*contact*/
+.contact{
+    padding: 80px 0 150px 0;
+    background-color: #fafafa;
+}
+.contact .wrap{
+    width: 1130px;
+    margin: 0 auto;
+}
+.contact .wrap h2{
+    background: url(images/contact.png) no-repeat center center; 
+    margin-bottom: 140px;
+}
+
+.contact .wrap strong{
+    color: #2c4755;
+    font-size: 55px;
+}
+
+.contact .wrap p{
+    color: #10cab7;
+    font-size: 50px;
+    padding-left: 45px;
+}
+
+.contact .wrap ul{ display: flex; padding-top: 20px;}
+.contact .wrap ul li{
+    padding-right: 15px;
+}
+.contact .wrap ul li i{
+    width: 22px; height: 22px;
+    display: inline-block;
+}
+
+.contact .wrap ul li.boll i{background: url(images/icon_01.png);}
+.contact .wrap ul li.google i{background: url(images/icon_02.png);}
+.contact .wrap ul li.twitter i{background: url(images/icon_03.png);}
+/*footer*/
+footer{
+    background-color: #2c4755;
+    height: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+footer .copyright{
+    padding-top: 40px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+}

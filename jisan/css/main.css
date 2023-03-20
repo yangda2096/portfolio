@@ -1,0 +1,95 @@
+@import url(default.css);
+@import url(common.css);
+@import url(sub.css);
+@import url(contents.css);
+
+.visual{height:822px;background:url(../images/main/visual_bg.jpg)center center no-repeat;background-size:cover;}
+.visual .inner{color:#fff;padding:335px;text-align:center;}
+.visual .inner h2{padding-bottom:10px;font-family: 'Nanum Myeongjo', serif;font-size:28px;font-weight:300;letter-spacing:0.2em;position:relative;}
+/*.visual .inner h2:after{content:"";width:96px;height:1px;background:#fff;position:absolute;left:0;bottom:0;}*/
+
+.visual .inner img{}
+.visual .inner p{padding:25px 0 5px 0;}
+
+
+
+/*course 코스안내*/
+.course{/*background:#a67eae;*/margin:158px 0;}
+.course .tst1{float:left;}
+.course .tst1 h2{font-size:36px;position:relative;padding:0 0 45px 0;}
+.course .tst1 h2:after{content:"";width:34px;height:2px;position:absolute;left:0;bottom:0;background:#3d3d3d;}
+.course .tst1 p{padding:42px 0 0 0;}
+
+.course .tst2{float:right;}
+.course .tst2 ul li{float:left;width:290px;margin-left:19px;font-size:0;line-height:0;}
+.course .tst2 ul li:first-child{margin-left:0;}
+
+.course .tst2 ul li a{position:relative;}
+.course .tst2 ul li .over_txt{transition:1s;position:absolute;left:0;bottom:0;color:#fff;width:100%;}
+.course .tst2 ul li .over_txt strong{transition:1s;display:block;font-size:22px;padding:0 0 23px 23px;font-weight:300;position:relative;}
+.course .tst2 ul li .over_txt em{width:240px;opacity:0;transition:1s;display:block;font-weight:300;font-size:16px;line-height:1.5;position:absolute;left:23px;top:0}
+ 
+.course .tst2 ul li a:hover{position:relative;display:block;}
+.course .tst2 ul li a:hover .over_txt{background:rgba(0, 65, 122,0.5);width:100%;transition:1s;position:absolute;left:0;bottom:0;color:#fff;}
+.course .tst2 ul li a:hover .over_txt strong{transition:1s;display:block;font-size:22px;padding:30px 0 120px 23px;font-weight:300;position:relative;}
+.course .tst2 ul li a:hover .over_txt em{width:240px;opacity:1;transition:1s;display:block;position:absolute;left:23px;top:54px}
+
+
+/*facilities 시설안내*/
+.facilities{background:url(../images/main/facilities_bg.jpg)center top no-repeat;}
+.facilities .wrap{position:relative;}
+.facilities h2{color:#fff;font-size:38px;font-weight:300;padding:31px 0;}
+.facilities .popup img{float:left;}
+.facilities .pop_txt{float:left;margin-left:90px;}
+.facilities .pop_txt strong{display:block;color:#fff; font-size:22px;font-weight:500;}
+.facilities .pop_txt span{display:block;color:#d4d4d4;padding:30px 0;}
+.facilities .pop_txt em{display:block;color:#ecc89f;padding-bottom:30px;font-size:15px;}
+.facilities .pop_txt a{display:inline-block;border:1px solid #d5d5d5;color:#d5d5d5;padding:13px 31px;transition:0.5s;}
+.facilities .pop_txt a:hover{background:#fff;color:#3d3d3d;}
+
+
+.popup{overflow:hidden; position:relative; width:100%;}
+.popup ul{position:absolute; left:0; top:0;}
+.popup ul li{float:left; height:498px;}
+
+
+.facilities .btn{position:absolute;top:334px;font-size:0;line-height:0;width:25px;height:48px;}
+.facilities .next{background:url(../images/main/pop_btn_next.png)no-repeat;right:-75px;}
+.facilities .prev{background:url(../images/main/pop_btn_prev.png)no-repeat;left:-75px;}
+
+.facilities .numbering{font-weight:300;position:absolute;top:48px;right:453px;color:#fff;}
+
+.facilities .numbering .curr_num{font-size:29px;color:#ecc89f;}
+.facilities .numbering .total_num{font-size:15px;}
+
+
+
+
+/*notice 공지사항*/
+.notice{/*background:#b5b8d7;*/margin:158px 0;}
+.notice .tit{float:left;}
+.notice .tit h2{font-size:36px;position:relative;padding:0 0 45px 0;}
+.notice .tit h2:after{content:"";width:34px;height:2px;position:absolute;left:0;bottom:0;background:#3d3d3d;}
+.notice .tit p{padding:42px 0 0 0;}
+
+.notice_ul{float:right;}
+.notice_ul ul{}
+.notice_ul ul li{float:left;margin-left:17px;}
+.notice_ul ul li:first-child{}
+.notice_ul ul li a{background:#fff;display:block;width:310px;border:1px solid #ccc;color:#3d3d3d;}
+.notice_ul ul li a img{}
+.notice_ul ul li a strong{display:block;padding:15px 0 0 23px;}
+.notice_ul ul li a span{display:block;color:#5e5e5e;padding:1px 0 27px 23px;}
+.notice_ul ul li a em{display:block;text-align:right;padding:0 46px 15px 0;background:url(../images/main/notice_more.jpg)right 19px top 14px no-repeat;}
+
+/*reservation 예약하기*/
+.reservation{text-align:center;background:#000;}
+.reservation .member{background:url(../images/main/member_bg.jpg)center top no-repeat;background-size:cover;width:50%;float:left;}
+.reservation .Public{background:url(../images/main/Public_bg.jpg)center top no-repeat;background-size:cover;width:50%;float:left;}
+
+.reservation a{height:372px;display:block;color:#fff;}
+.reservation a strong{position:relative;display:block;font-size:22px;font-weight:400;padding:120px 0 20px 0;}
+/*.reservation a strong:after{content:"";width:34px;height:1px;position:absolute;left:380px;bottom:0;background:#fff;}*/
+.reservation a span{display:block;padding:0 0 11px 0;}
+.reservation a em{display:inline-block;position:relative;/*background:url(../images/main/reservation_more.png)right 320px  center no-repeat;*/}
+.reservation a img{padding-bottom:5px;}

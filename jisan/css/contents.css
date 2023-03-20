@@ -1,0 +1,102 @@
+/*로그인*/
+#contents .cts_login{position:relative;margin:32px 0 136px 0;}
+
+#contents .cts_login .login_box{position:relative;width:620px;height:459px;background:#f3f3f3;border-top:2px solid #5e5e5e;}
+#contents .cts_login .login_box .login_inner{padding:58px 0 0 60px;}
+#contents .cts_login .login_box h2{font-size:22px;font-weight:400;}
+#contents .cts_login .login_box strong{color:#5e5e5e;font-weight:400;}
+#contents .cts_login .login_box form{}
+#contents .cts_login .login_box fieldset{}
+#contents .cts_login .login_box fieldset legend{font-size:0;line-height:0;border:0;}
+#contents .cts_login .login_box fieldset dl dt{font-size:0;line-height:0;border:0;}
+#contents .cts_login .login_box fieldset dl .userid{margin:26px 0 11px 0;}
+#contents .cts_login .login_box fieldset input{border:1px solid #797979; font-size:14px;display:block;height:45px;width:351px;}
+#contents .cts_login .login_box fieldset input[placeholder]{padding-left:19px;}
+
+#contents .cts_login .login_box button{position:absolute;left:441px;top:142px;background:#2f2f2f;color:#fff;font-weight:400;font-size:14px;width:118px;height:100px;border-radius:4px;}
+
+#contents .cts_login .login_box .go_link{margin:17px 0 34px 0;}
+#contents .cts_login .login_box .go_link ul li{float:left;}
+#contents .cts_login .login_box .go_link ul li:first-child a{padding:0 13px 0 0;}
+#contents .cts_login .login_box .go_link ul li a{color:#5e5e5e;font-size:14px;background:url(../images/sub/path_bg.png)right center no-repeat;padding:0 13px;}
+#contents .cts_login .login_box p{color:#5e5e5e;font-size:14px;}
+#contents .cts_login .login_box em{color:#b5b5b5;font-size:14px;}
+
+#contents .cts_login .login_slideBanner{position:absolute;left:620px;top:0;}
+#contents .cts_login .login_slideBanner a{display:block;}
+
+
+/*컨트리 클럽 소개*/
+#contents .cts_country{text-align:center;}
+#contents .cts_country p{word-break:keep-all;}
+#contents .cts_country .wrap{position:relative; }
+
+#contents .cts_country .country_img01 {display:inline-block;text-align:center;}
+#contents .cts_country .country_img01 p{text-align:center;}
+
+
+#contents .cts_country .country_img02{padding:70px 0 310px 0;text-align:left;}
+#contents .cts_country .country_img02 p{width:510px;}
+
+#contents .cts_country .country_img03{position:absolute;right:0;top:647px;text-align:left;}
+#contents .cts_country .country_img03 p{text-align:left;width:555px;}
+
+
+#contents .cts_login .go_link{}
+/*코스안내*/
+#contents .cts_course .membership{margin-bottom:140px;position:relative;}
+#contents .cts_course .membership .course_popup ul li{position:relative;}
+#contents .cts_course .membership .course_popup ul li img{display:block;}
+#contents .cts_course .membership .course_popup ul li .tst{position:absolute;left:0;bottom:0;background:rgba(0, 0, 0, 0.7);width:100%;}
+#contents .cts_course .membership .course_popup ul li .tst strong{padding:16px 0 16px 50px;isplay:block;font-size:36px;color:#fff;font-weight:300;}
+#contents .cts_course .membership .course_popup ul li .tst em{word-break:keep-all;padding:0 236px 16px 50px;display:block;color:#d0d0d0;}
+
+#contents .cts_course .membership .btn{top:192px;font-size:0;line-height:0;width:68px;height:105px;}
+#contents .cts_course .membership .next{position:absolute;left:50%;margin-left:618px;background:rgba(0, 0, 0, 0.5)url(../images/contents/coures_next_btn.png) left 18px center no-repeat;}
+#contents .cts_course .membership .prev{position:absolute;right:50%;margin-right:618px;background:rgba(0, 0, 0, 0.5)url(../images/contents/coures_prev_btn.png) right 18px center no-repeat;}
+
+#contents .cts_course .public{text-align:center;background:url(../images/contents/coures_public_bg.jpg)center center no-repeat;background-size:cover;height:931px;}
+#contents .cts_course .public .public_tit{display:inline-block;}
+#contents .cts_course .public .public_tit h2{font-size:28px;padding:90px 0 20px 0;color:#fff;background:url(../images/sub/sub_tit_bg.jpg)center bottom no-repeat;}
+#contents .cts_course .public .public_tit p{color:#fff;padding:29px 0 70px 0;width:377px;font-weight:300;}
+#contents .cts_course .public .inner{display:inline-block;}
+#contents .cts_course .public P{color:#d0d0d0;width:805px;word-break:keep-all;font-weight:300;padding-top:20px;}
+
+/*popup*/
+#contents .cts_course .course_popup{overflow:hidden; position:relative; width:100%;}
+#contents .cts_course .course_popup ul{position:absolute; left:0; top:0;}
+#contents .cts_course .course_popup ul li{float:left; width:1200px; height:489px;}
+#contents .cts_course .course_popup ul li .inner{margin:0 18px;overflow:hidden;position:relative;}
+
+
+/*예약안내*/
+#contents .cts_booking{margin-bottom:120px;}
+#contents .cts_booking .booking_notice ul{margin:55px 0;}
+#contents .cts_booking .booking_notice ul li{float:left;border:1px solid #cecece;height:221px;width:32%;}
+#contents .cts_booking .booking_notice ul li:nth-child(2),#contents .cts_booking .booking_notice ul li:nth-child(5){border-left:0;border-right:0;}
+#contents .cts_booking .booking_notice ul li:nth-child(4),
+#contents .cts_booking .booking_notice ul li:nth-child(5),
+#contents .cts_booking .booking_notice ul li:nth-child(6){border-top:0;}
+#contents .cts_booking .booking_notice ul li strong{display:block;font-size:22px;font-weight:400;padding:35px 0 0 35px;}
+#contents .cts_booking .booking_notice ul li span{display:block;padding:10px 0 0 35px;width:314px;}
+#contents .cts_booking .booking_notice ul li span em{color:#00afff;}
+
+
+#contents .cts_booking .Placebo_notice .Placebo_tit{width:400px;float:left;}
+#contents .cts_booking .Placebo_notice .Placebo_tit h2{font-size:28px;padding-bottom:20px;background:url(../images/sub/sub_tit_bg.jpg)left bottom no-repeat;}
+#contents .cts_booking .Placebo_notice .Placebo_tit p{color:#5e5e5e;padding:29px 0 50px 0;width:368px;}
+
+#contents .cts_booking .Placebo_notice .tbl{margin-left:400px;border-top:solid 2px #5e5e5e;}
+#contents .cts_booking .Placebo_notice .tbl table{border-collapse:collapse;width:100%;}
+
+#contents .cts_booking .Placebo_notice .tbl thead{background:#efefef;}
+#contents .cts_booking .Placebo_notice .tbl thead tr th{height:44px;font-size:22px;font-weight:400;}
+#contents .cts_booking .Placebo_notice .tbl thead tr th:first-child{width:219px;}
+#contents .cts_booking .Placebo_notice .tbl thead tr th:nth-child(2){width:306px;text-align:left;padding-left:72px;}
+#contents .cts_booking .Placebo_notice .tbl thead tr th:nth-child(3){text-align:left;}
+#contents .cts_booking .Placebo_notice .tbl tbody tr{}
+#contents .cts_booking .Placebo_notice .tbl tbody tr th{font-size:18px;font-weight:400;}
+#contents .cts_booking .Placebo_notice .tbl tbody tr td{padding:17px 0;}
+#contents .cts_booking .Placebo_notice .tbl tbody tr td:nth-child(2){width:306px;padding-left:72px;}
+
+#contents .cts_booking .Placebo_notice .tbl th,#contents .cts_booking .Placebo_notice .tbl td{border-bottom:1px solid #ccc;}

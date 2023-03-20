@@ -1,0 +1,28 @@
+@font-face {
+ font-family: 'NS';
+ font-weight:300;
+ src: url(../font/NanumSquare/NanumSquareR.eot);
+ src: url(../font/NanumSquare/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquare/NanumSquareR.woff) format('woff');
+}
+@font-face {
+ font-family: 'NS';
+ font-weight:200;
+ src: url(../font/NanumSquare/NanumSquareL.eot);
+ src: url(../font/NanumSquare/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquare/NanumSquareL.woff) format('woff');
+}
+@font-face {
+ font-family: 'NS';
+ font-weight:900;
+ src: url(../font/NanumSquare/NanumSquareEB.eot);
+ src: url(../font/NanumSquare/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquare/NanumSquareEB.woff) format('woff');
+}
+@font-face {
+ font-family: 'NS';
+ font-weight:600;
+ src: url(../font/NanumSquare/NanumSquareB.eot);
+ src: url(../font/NanumSquare/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquare/NanumSquareB.woff) format('woff');
+}

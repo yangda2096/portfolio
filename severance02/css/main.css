@@ -1,0 +1,286 @@
+@import url(default.css);
+@import url(common.css);
+@import url(sub.css);
+@import url(contents.css);
+
+body{
+    
+    box-sizing: border-box; letter-spacing: -0.5px; font-family: 'NanumSquare'; font-size: 18px; font-weight: 400; color: var(--black-color); 
+}
+
+
+.wrap{width: 1200px; margin: 0 auto;}
+@media screen and (max-width:800px){
+    .wrap{width: 100%;}
+ }
+
+/*visual*/
+.main-visual{
+    overflow-x: auto;
+    clear: both;
+    width: 100%;
+    height: 600px;
+    background: url(../img/main_visual.jpg)no-repeat center top;
+    background-size: cover;
+    color: #fff;
+}
+
+.main-visual .wrap h2{font-size: 60px; font-weight: 600; padding-top: 200px;  text-shadow: 2px 0 9px rgba(0, 0, 0, 0.14);}
+.main-visual .wrap p{ text-shadow: 2px 0 9px rgba(0, 0, 0, 0.14); padding-top: 20px;}
+
+@media screen and (max-width:800px){
+    .main-visual .wrap h2{font-size: 50px; font-weight: 600;}
+}
+/*세브란스병원 바로가기*/
+.shortcut .wrap{position: relative;}
+.shortcut .wrap h2{text-align: center; font-size: 48px; font-weight: 600; padding-top: 100px;}
+.shortcut .wrap .sub-title{text-align: center; padding: 20px 0;}
+.shortcut .tap-menu{background-color: #eaeaea; padding: 50px 0;}
+.shortcut .tap-menu .wrap ul{display: flex; justify-content: center;}
+.shortcut .tap-menu .wrap ul li{margin-right: 35px; }
+.shortcut .tap-menu .wrap ul li:last-child{margin: 0;}
+.shortcut .tap-menu .wrap ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110px; height: 110px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 2px 0 9px rgba(0, 0, 0, 0.14);
+    transition: 0.5s;
+}
+.shortcut .tap-menu .wrap ul li a:hover{
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.50);
+}
+.shortcut .tap-menu .wrap ul li a span{font-size: 16px;}
+.shortcut .tap-menu .wrap ul li a i{
+    display: block;
+    width: 50px; height: 50px;
+    
+}
+.shortcut .tap-menu .wrap ul li a i.icon01{background: url(../img/shortcut_ico01.png) no-repeat center center;}
+.shortcut .tap-menu .wrap ul li a i.icon02{background: url(../img/shortcut_ico02.png) no-repeat center center;}
+.shortcut .tap-menu .wrap ul li a i.icon03{background: url(../img/shortcut_ico03.png) no-repeat center center;}
+.shortcut .tap-menu .wrap ul li a i.icon04{background: url(../img/shortcut_ico04.png) no-repeat center center;}
+.shortcut .tap-menu .wrap ul li a i.icon05{background: url(../img/shortcut_ico05.png) no-repeat center center;}
+
+.shortcut .tap-menu .wrap ul li.on a{background-color: #2984ff; color: var(--white-color);}
+.shortcut .tap-menu .wrap ul li.on a i.icon01{background: url(../img/shortcut_ico01_on.png) no-repeat center center;}
+.shortcut .tap-menu .wrap ul li.on a i.icon02{background: url(../img/shortcut_ico02_on.png) no-repeat center center;}
+.shortcut .tap-menu .wrap ul li.on a i.icon03{background: url(../img/shortcut_ico03_on.png) no-repeat center center;}
+.shortcut .tap-menu .wrap ul li.on a i.icon04{background: url(../img/shortcut_ico04_on.png) no-repeat center center;}
+.shortcut .tap-menu .wrap ul li.on a i.icon05{background: url(../img/shortcut_ico05_on.png) no-repeat center center;}
+
+
+
+.shortcut .tap-menu .wrap ul li .tap-cts{display: none;}
+.shortcut .tap-menu .wrap ul li .tap-cts img{
+    width: 80%;
+    height: auto;
+}
+.shortcut .tap-menu .wrap ul li.on .tap-cts{
+    display: flex;
+    position: absolute;
+    top: 250px; left: 0;
+    text-align: left;
+}
+
+.shortcut .tap-menu .wrap ul li .tap-cts div{padding: 50px 0 50px 30px; width: 20%;}
+
+
+.shortcut .tap-menu .wrap ul li .tap-cts div .title{font-size: 40px; }
+.shortcut .tap-menu .wrap ul li .tap-cts div p{padding-bottom: 30px; }
+.shortcut .tap-menu .wrap ul li .tap-cts div a{
+    display: block;
+    border-radius: 0; box-shadow: none;
+    border: 1px solid #e0e0e0;
+    width: 300px; height: 50px;
+    text-align: left;
+    line-height: 50px;
+    padding: 0 0 0 15px;
+    /*padding: 0 175px 0 15px;*/
+    color: var(--black-color);
+    background: url(../img/a_bg.png) no-repeat 125px center;
+}
+
+@media screen and (max-width:800px){
+    .shortcut .tap-menu .wrap ul li{ width: 20%;}
+    .shortcut .tap-menu .wrap ul li a{
+        position: relative;
+        display: flex;
+        /* flex-direction: column;
+        justify-content: center; */
+        
+        width: auto; height: auto;
+        padding-bottom: 100%;
+
+        /* width: 50px; height: 50px; */
+        background-color: #fff;
+        border-radius: 100%;
+        box-shadow: 2px 0 9px rgba(0, 0, 0, 0.14);
+        transition: 0.5s;
+    }
+    .shortcut .tap-menu .wrap ul li a span{position: absolute; bottom: -50%;  text-align: center; left: 50%; width: auto; transform: translate(-50%, -50%); white-space: nowrap;}
+    .shortcut .tap-menu .wrap ul li a i{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+    .shortcut .tap-menu .wrap ul li.on a{color: var(--black-color);}
+    .shortcut .tap-menu .wrap ul li.on .tap-cts{        
+        top: 250px; left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shortcut .tap-menu .wrap ul li .tap-cts img{
+        position: relative;
+    }
+    .shortcut .tap-menu .wrap ul li .tap-cts div{
+        /* position: absolute;
+        bottom: -300px;
+        left: 30px; */
+        /* flex-direction: column;
+        align-items: flex-end; */
+        display: inline-block;
+        width: auto;
+        padding: 0;
+        text-align: center;
+        padding-top: 60px;
+    }
+ }
+
+/*바로가기 모음*/
+.shortcut .shortcut-btn{padding-top: 570px;}
+.shortcut .shortcut-btn .wrap ul{display: flex; flex-wrap: wrap;}
+.shortcut .shortcut-btn .wrap ul li{height: 300px;}
+.shortcut .shortcut-btn .wrap ul li:nth-child(1){
+    background: #fafafa url(../img/shortcut-btn01.png) no-repeat 90% bottom;
+    width: 50%;
+    
+}
+.shortcut .shortcut-btn .wrap ul li:nth-child(2){
+    background: #0094fb url(../img/shortcut-btn02.png) no-repeat 90% 90%;
+    width: 25%;
+}
+.shortcut .shortcut-btn .wrap ul li:nth-child(3){
+    background: #007cfb url(../img/shortcut-btn03.png) no-repeat 90% 90%;
+    width: 25%;
+}
+.shortcut .shortcut-btn .wrap ul li:nth-child(4){
+    background: #31bdee url(../img/shortcut-btn04.png) no-repeat 90% 90%;
+    width: 25%;
+}
+.shortcut .shortcut-btn .wrap ul li:nth-child(5){
+    background: #316092 url(../img/shortcut_5_bg.jpg) right no-repeat;
+    width: 50%;
+}
+.shortcut .shortcut-btn .wrap ul li:nth-child(6){
+    background: #396178 url(../img/shortcut-btn06.png) no-repeat 90% 90%;
+    width: 25%;
+}
+
+.shortcut .shortcut-btn .wrap ul li a{
+    display: block;
+    width: 100%; height: 100%;
+}
+.shortcut .shortcut-btn .wrap ul li:first-child a .cts{ color: var(--black-color);}
+.shortcut .shortcut-btn .wrap ul li:first-child a .cts p::after{ background-color: var(--black-color);} 
+.shortcut .shortcut-btn .wrap ul li:first-child a .cts span{ background: url(../img/shortcut-btn-more_b.png) no-repeat right bottom;}
+.shortcut .shortcut-btn .wrap ul li a .cts{ padding: 60px 0 0 45px; color: #fff;}
+.shortcut .shortcut-btn .wrap ul li a .cts strong{ font-size: 40px; font-weight: 400;}
+.shortcut .shortcut-btn .wrap ul li a .cts p{ font-size: 22px; padding: 15px 0; position: relative;}
+.shortcut .shortcut-btn .wrap ul li a .cts p::after{
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 60px; height: 1px;
+    background-color: #fff; /*858485*/
+}
+.shortcut .shortcut-btn .wrap ul li a .cts span{
+    display: inline-block;
+    padding: 15px 30px 0 0;
+    background: url(../img/shortcut-btn-more.png) no-repeat right bottom; 
+}
+
+@media screen and (max-width:800px){
+    .shortcut .shortcut-btn{padding-top: 640px;}
+    .shortcut .shortcut-btn .wrap ul li:nth-child(1){ width: 100%; }
+    .shortcut .shortcut-btn .wrap ul li:nth-child(2){ width: 50%; }
+    .shortcut .shortcut-btn .wrap ul li:nth-child(3){ width: 50%; }
+    .shortcut .shortcut-btn .wrap ul li:nth-child(4){ order: 1; width: 50%; position: relative;}
+    .shortcut .shortcut-btn .wrap ul li:nth-child(5){ width: 100%;}
+    .shortcut .shortcut-btn .wrap ul li:nth-child(6){ width: 50%;}
+    
+    .shortcut .shortcut-btn .wrap ul li a .cts strong{ font-size: 30px; font-weight: 400;}
+    .shortcut .shortcut-btn .wrap ul li a .cts p{ font-size: 18px; padding: 15px 0; position: relative;}
+}
+
+/*뉴스*/
+.news{
+    background: #003c7c url(../img/news_bg.jpg) no-repeat center center;
+    color: var(--white-color);
+    margin-top: 125px;
+    height: 590px;
+}
+
+.news .wrap h2{
+    font-size: 48px;
+    font-weight: 600;
+    padding-top: 80px;
+}
+.news .wrap .sub-title{ position: relative;}
+.news .wrap .sub-wrap {display: flex; align-items: center;}
+.news .wrap .sub-wrap .sub-title{ margin-right: 70px;}
+.news .wrap .btn-wrap  button{
+    cursor: pointer; 
+    color: var(--white-color);
+    font-size: 16px; 
+    margin-right: 20px;
+}
+.news .wrap .btn-wrap  button.on{
+    color: var(--blue-color);
+    font-weight: 600;
+    width: 60px; height: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.news .wrap ul{ 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.news .wrap ul li{
+    margin-right: 35px;
+}
+.news .wrap ul li:last-child{margin-right: 0;}
+.news .wrap ul li a{
+    display: inline-block;
+    width: 100%; height: 235px;
+    background-color: #fff;
+}
+.news .wrap ul li a .cts-box{padding: 45px;}
+
+.news .wrap ul li a .cts-box .title{ font-size: 20px; font-weight: 600;}
+.news .wrap ul li a .cts-box .cts{ 
+    color: #606060; 
+    font-size: 18px; 
+    line-height: 25px;
+    padding: 20px 0;
+}
+
+.news .wrap ul li a .cts-box .date{font-size: 14px;}
+@media screen and (max-width:800px){
+    .news .wrap h2{ text-align: center; }
+    .news .wrap .sub-wrap .sub-title{ margin-right: 0; margin-bottom: 10px;}
+    .news .wrap .sub-wrap{flex-direction: column;}
+
+
+    .news .wrap ul{ 
+        justify-content: center;
+    }
+    .news .wrap ul li{ margin-right: 0; width: 90%;}
+    .news .wrap ul li:nth-child(2){ display: none; }
+    .news .wrap ul li:nth-child(3){ display: none; }
+}
+@media screen and (max-width:800px){
+    
+ }

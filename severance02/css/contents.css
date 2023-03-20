@@ -1,0 +1,172 @@
+
+/*공통 - 안쪽 소제목*/
+.inner_tit h4{
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+.inner_tit h4::after{
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 5px; height: 20px;
+    background-color: #31bdee;
+}
+
+/*공통 - 안내*/
+.guide{ border:  1px solid #cfcfcf; padding: 20px 40px;}
+.guide ul{}
+.wrap .guide ul li{  position: relative; line-height: 32px; padding-left: 20px;}
+.guide ul li::after{
+    content: '';
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translate(-50%, -50%);
+    width: 6px; height: 6px;
+    background-color: #31bdee;
+    border-radius: 100%;
+}
+
+/* 임시 서브 비주얼*/
+
+/*의료인 검색*/
+.contents .h_search{
+    background-color: #f4f3f3;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.contents .h_search .wrap form { position: relative; }
+.contents .h_search .wrap form select{ 
+    width: 260px; height: 50px;
+    border: 1px solid #cfcfcf;
+    padding-left: 15px;
+    font-family: 'NanumSquare';
+    font-size: 18px;
+}
+.contents .h_search .wrap form input{
+    
+    width: 815px; height: 50px;
+    border: 1px solid #cfcfcf;
+}
+.contents .h_search .wrap form button{
+    position: absolute;
+    top: 0; right: 100px;
+    width: 52px; height: 52px;
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents .search_result{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.contents .search_result .wrap .inner_tit{border-bottom: 1px solid #ececec;}
+
+
+.contents .search_result .wrap .result{ display: flex; margin-top: 25px; }
+.contents .search_result .wrap .result .result_inner{ padding-left: 35px; padding-top: 25px; }
+.contents .search_result .wrap .result .result_inner .dt_name{ padding-bottom: 20px;}
+.contents .search_result .wrap .result .result_inner ul li{ display: flex; padding-bottom: 8px;}
+.contents .search_result .wrap .result .result_inner ul li.letter strong{ letter-spacing: 7px;}
+.contents .search_result .wrap .result .result_inner ul li.letter p{ margin-left: -7px;}
+.contents .search_result .wrap .result .result_inner a{ display: inline-block; background-color: #ececec; padding: 10px 45px 10px 20px; margin: 30px 0 20px 0 ;}
+
+/*검진안내*/
+.contents .e_guide .wrap {position: relative;}
+.contents .e_guide .wrap .guide_tab{padding-top: 50px; padding-bottom: 770px;}
+.contents .e_guide .wrap .guide_tab ul{ display: flex; justify-content: space-between; }
+.contents .e_guide .wrap .guide_tab ul li{
+    width: 20%;
+    text-align: center;
+}
+.contents .e_guide .wrap .guide_tab ul li a{ transition: 0.2s; cursor: pointer; display: block; line-height: 50px; border: 1px solid #d0d0d0; border-right: 0;}
+.contents .e_guide .wrap .guide_tab ul li:last-child a{border-right: 1px solid #d0d0d0;}
+.contents .e_guide .wrap .guide_tab ul li.on a{
+    background: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    color: var(--white-color);
+}
+.contents .e_guide .wrap .guide_tab ul li a span{position: relative;}
+.contents .e_guide .wrap .guide_tab ul li a span::after{
+    content: '';
+    position: absolute;
+    top: 15px; right: -15px;
+    width: 6px; height: 6px; 
+    background: var(--yellow-color);
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.contents .e_guide .wrap .guide_tab ul li a:hover{
+    background: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    color: var(--white-color);
+}
+.contents .e_guide .wrap .guide_tab ul li a:hover span::after{
+    opacity: 1;
+    top: 0;
+}
+.contents .e_guide .wrap .guide_tab ul li.on a span::after{
+    opacity: 1; top: 0;
+}
+
+.contents .e_guide .wrap .guide_tab ul li .tab_cts{
+    position: absolute;
+    left: 0;
+    text-align: left;
+    padding-top: 50px;
+}
+.contents .e_guide .wrap .guide_tab ul li .tab_cts .map { padding: 0 23px; ;}
+.contents .e_guide .wrap .guide_tab ul li .tab_cts .map .map_API{ display: flex; justify-content: center;}
+.contents .e_guide .wrap .guide_tab ul li .tab_cts .map p{line-height: 30px;}
+
+/*예약안내*/
+.contents .r_guide .wrap .inner_tit{margin-top: 50px;}
+.contents .r_guide .wrap .reservation{
+    background: #fcfcfc;
+    padding: 40px;
+    margin: 45px 0;
+}
+.contents .r_guide .wrap .reservation ul li{ position: relative; padding-left: 20px; padding-bottom: 20px;}
+.contents .r_guide .wrap .reservation ul li::after{
+    content: '';
+    position: absolute;
+    top: 10px; left: 0;
+    transform: translate(-50%, -50%);
+    width: 6px; height: 6px;
+    background-color: #31bdee;
+    border-radius: 100%;
+}
+
+.contents .r_guide .wrap .rese_btn{ 
+    background-color: #31bdee;
+    color: var(--white-color);
+    display: block;
+    height: 35px; width: 200px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.contents .r_guide .wrap .time{ background: #f5f5f5; padding: 40px 33px; margin-bottom: 50px;}
+.contents .r_guide .wrap .time ul{ display: flex; }
+.contents .r_guide .wrap .time ul li{ position: relative; display: flex; padding-right: 135px; margin-left: 18px;}
+.contents .r_guide .wrap .time ul li::after{ 
+    content: '';
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translate(-50%, -50%);
+    width: 1px; height: 115px;
+    background-color: #bbb;
+}
+.contents .r_guide .wrap .time ul li:last-child{padding-right: 0;}
+.contents .r_guide .wrap .time ul li:last-child::after{width: 0;}
+.contents .r_guide .wrap .time ul li img{ display: block; width: 60px; height: 60px;}
+.contents .r_guide .wrap .time ul li span.txt_box{ display: flex; flex-direction: column; padding-left: 20px;}
+.contents .r_guide .wrap .time ul li span.txt_box em{ font-style: normal; font-size: 15px;}
+.contents .r_guide .wrap .time ul li span.txt_box em span.date{letter-spacing: 7.5px;}
+.contents .r_guide .wrap .time ul li span.txt_box em span.sunday{letter-spacing: 1px;}

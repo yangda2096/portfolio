@@ -1,0 +1,79 @@
+
+
+/*풋사과 판매(상세)페이지*/
+.contents .shop_green_apple {margin-top: 80px; margin-bottom: 150px;}
+.contents .shop_green_apple .wrap .Product_info{ display: flex; margin-bottom: 60px;}
+
+.contents .shop_green_apple .wrap .Product_info .left{ width: 50%; }
+.contents .shop_green_apple .wrap .Product_info .left img{ width:551px; height: 551px; background-color: gainsboro;}
+
+.contents .shop_green_apple .wrap .Product_info .right{ padding: 20px 0 0 30px; width: 50%;}
+.contents .shop_green_apple .wrap .Product_info .right h3 { font-size: 25px;}
+.contents .shop_green_apple .wrap .Product_info .right .product_ratigs { margin: 5px 0;}
+.contents .shop_green_apple .wrap .Product_info .right .product_ratigs span{ font-size: 10px; padding-right: 10px;}
+.contents .shop_green_apple .wrap .Product_info .right .product_ratigs p{ font-size: 14px; display: inline;}
+.contents .shop_green_apple .wrap .Product_info .right .description_box { display: flex; }
+.contents .shop_green_apple .wrap .Product_info .right .description_box .prices{ 
+    font-size: 20px; 
+    color: #cf0303; 
+    font-weight: 500;  
+    border-bottom: 1px solid #f0f0f0;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.contents .shop_green_apple .wrap .Product_info .right .description_box02 ul li{ 
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 30px;
+}
+.contents .shop_green_apple .wrap .Product_info .right .sel_option{ 
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.contents .shop_green_apple .wrap .Product_info .right .sel_option input{
+    width: 50px; height: 30px;
+    margin-left: -2px;
+    margin-right: -3px;
+    border: 1px solid #575656;
+    text-align: center;
+}
+.contents .shop_green_apple .wrap .Product_info .right .sel_option button{
+    border: 1px solid #575656;
+    width: 50px;
+    height: 30px;
+}
+.contents .shop_green_apple .wrap .Product_info .right .sel_option strong{ padding-right: 15px;}
+
+.contents .shop_green_apple .wrap .Product_info .right .product_button{ margin: 15px 0; text-align: right;}
+.contents .shop_green_apple .wrap .Product_info .right .product_button button{
+    width: 150px; height: 42px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.contents .shop_green_apple .wrap .Product_info .right .product_button button.now{ background-color: #FF4948;}
+.contents .shop_green_apple .wrap .Product_info .right .product_button button.cart{ background-color: #2E3340;}
+
+
+.contents .shop_green_apple .wrap .nav_tabs ul{ display: flex;}
+.contents .shop_green_apple .wrap .nav_tabs ul li{ 
+    display: flex; 
+    justify-content: center; align-items: center;
+    width: 25%; height: 40px;
+    border: 1px solid #d5d5d5;
+    background: #f5f5f5;
+    color: #959595;
+}
+.contents .shop_green_apple .wrap .nav_tabs ul li.on{
+    background-color: #fff;
+    border-top: 2px solid #2d2d2d;
+    color: #2d2d2d;
+    border-bottom: none;
+}
+
+.contents .shop_green_apple .wrap .green_apple{ display: flex; justify-content: center; margin-bottom: 150px;}

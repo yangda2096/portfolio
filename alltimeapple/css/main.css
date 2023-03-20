@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url(default.css);
+@import url(common.css);
+@import url(contents.css);
+@import url(sub.css);
+
+.skip{display: none;}
+body{font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 16px; word-spacing: -2px;
+}
+.wrap{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/*태블릿 너비*/
+@media screen and (max-width:1024px){
+    .wrap{ width: 768px;}
+}
+
+/*휴대폰 너비*/
+@media screen and (max-width:768px){
+    .wrap{
+        margin:0; 
+        width: 100%;
+        padding: 0 5%;
+    }
+}
+.visual{
+    height: 505px;
+    width: 100%;
+}
+.visual .swiper-container .swiper-wrapper .swiper-slide{
+    width: 100%; height: 505px;
+}
+.visual .swiper-container .swiper-wrapper .slide_01{
+    background: url(../img/main/visual_01.jpg) center center no-repeat;
+}
+.visual .swiper-container .swiper-wrapper .slide_01 .wrap .txt_img{ padding: 132px 0 0 123px;}
+
+.visual .visual_btn{ width: 22px; height: 41px; }
+.visual .visual_btn::after{ content: '';}
+.visual .btn_next{ background: url(../img/main/visual_btn_next.png); }
+.visual .btn_prev{ background: url(../img/main/visual_btn_prev.png); }
+
+/*휴대폰 너비*/
+@media screen and (max-width:768px){
+    .visual .wrap{
+        margin: 0 0; 
+        width: 100%;
+        padding: 0;
+    }
+        
+    .visual .swiper-container .swiper-wrapper .slide_01 .wrap .txt_img{ display: none;}
+    .visual .swiper-container .swiper-wrapper .slide_01{
+        background: url(../img/main/visual_01_m.jpg) center center no-repeat;
+        background-size: cover;
+    }
+}
+.Product{position: relative;}
+.Product::after{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    background-color: #f4f4f4; width: 100%; height: 260px;
+    z-index: 0;
+}
+
+.Product .wrap {
+    display: flex; 
+    justify-content: space-between; 
+    position: relative; z-index: 1;
+    padding-top: 75px;
+}
+.Product .wrap .title h2{font-size: 35px; position: relative; z-index: 1; font-weight: 900;}
+.Product .wrap .title h2::after{
+    content: "";
+    display: block;
+    background: url(../img/main/Product_tit_bg.png) no-repeat;
+    width: 47px; height: 45px;
+    position: absolute; top: -10px; left: -32px;
+    z-index: -1;
+}
+.Product .wrap .title p{padding: 10px 0 0 20px;}
+.Product .wrap .title span{display: block;}
+
+.Product .wrap .apple ul{display: flex;}
+.Product .wrap .apple ul li a{
+    position: relative;
+    background-color: cornflowerblue;
+    display: flex;
+    width: 243px; height: 353px;
+}
+.Product .wrap .apple ul li:nth-child(1) a{ background: url(../img/main/Product_ap_01.jpg) no-repeat; }
+.Product .wrap .apple ul li:nth-child(2) a{ background: url(../img/main/Product_ap_02.jpg) no-repeat; }
+.Product .wrap .apple ul li:nth-child(3) a{ background: url(../img/main/Product_ap_03.jpg) no-repeat; }
+.Product .wrap .apple ul li a span{
+    position: absolute;
+    right: 0; bottom: 0;
+    border: 1px solid #fff;
+    border-radius: 20px 0 0 0;
+    width: 214px;
+    height: 85px;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 30px 0 0 80px;
+}
+.Product .wrap .apple ul li:nth-child(1) a span{ background: #fff url(../img/main/Product_ico_01.png) 20px 25px no-repeat; }
+.Product .wrap .apple ul li:nth-child(2) a span{ background: #fff url(../img/main/Product_ico_02.png) 20px 25px no-repeat;}
+.Product .wrap .apple ul li:nth-child(3) a span{ background: #fff url(../img/main/Product_ico_03.png) 20px 25px no-repeat;}
+/*태블릿 너비*/
+@media screen and (max-width:1024px){
+    .Product .wrap { flex-direction: column; }
+    .Product .wrap .title span{display: inline-block;}
+    .Product .wrap .apple ul{ flex-direction: column; }
+    .Product .wrap .apple ul li a{
+        position: relative;
+        background-color: cornflowerblue;
+        display: flex;
+        width: 100%; height: 248px;
+    }
+
+    .Product .wrap .apple ul li:nth-child(1) a{ background: url(../img/main/Product_ap_01_tab.jpg) no-repeat; }
+    .Product .wrap .apple ul li:nth-child(2) a{ background: url(../img/main/Product_ap_02_tab.jpg) no-repeat; }
+    .Product .wrap .apple ul li:nth-child(3) a{ background: url(../img/main/Product_ap_03_tab.jpg) no-repeat; }
+}
+
+.majorItem .wrap{ display: flex; justify-content: space-between; padding-top: 192px;}
+.majorItem .wrap .title h2{ position: relative; }
+.majorItem .wrap .title h2::before{
+    content: '';
+    display: block;
+    width: 45px;
+    height: 5px;
+    background-color: #38bc26;
+    margin-bottom: 3px;
+}
+
+.majorItem .wrap .slide_wrap{
+    width: 730px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.majorItem .wrap .slide_wrap .slides{ display: flex; }
+.majorItem .wrap .slide_wrap .slides div:nth-child(2){margin-left: 35px;}
+.majorItem .wrap .slide_wrap .slides .majorItem_slide a{ 
+    display: flex;
+    align-items: center;
+    width: 347.5px;
+    justify-content: space-between;
+}
+.majorItem .wrap .slide_wrap .slides .majorItem_slide a:nth-child(2){margin-top: 97px;}
+
+/*태블릿 너비*/
+@media screen and (max-width:1024px){
+    .majorItem .wrap{ flex-direction: column; padding-top: 30px;}
+    .majorItem .wrap .title{ margin-bottom: 60px;}
+    .majorItem .wrap .slide_wrap{
+        width: 100%;
+    }
+    .majorItem .wrap .slide_wrap .slides div:nth-child(2){display: none;}
+    .majorItem .wrap .slide_wrap .slides .majorItem_slide a{ 
+        flex-direction: row-reverse;
+    }
+    .majorItem .wrap .slide_wrap .slides .majorItem_slide a img{height: 166px;}
+}
+
+.farm_info .wrap{ display: flex; margin-top: 215px; margin-bottom: 105px;}
+.farm_info .wrap div{ 
+    width: 50%; height: 273px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.farm_info .wrap div.farm{ background:url(../img/main/farm_info_bg_01.jpg) no-repeat; background-size: cover;}
+.farm_info .wrap div.apple{ background:url(../img/main/farm_info_bg_02.jpg) no-repeat; background-size: cover;}
+
+.farm_info .wrap div span{
+    border: 9px solid #fff;
+    padding: 57px 30px;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+/*휴대폰 너비*/
+@media screen and (max-width:768px){
+    .farm_info .wrap{ 
+        flex-direction: column;
+    }
+    .farm_info .wrap div{ 
+        width: 100%; height: 273px;
+    }
+    
+}

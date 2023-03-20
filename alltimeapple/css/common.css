@@ -1,0 +1,49 @@
+header{background-color: #fff;}
+header .wrap{ display: flex; justify-content: space-between; align-items: center; }
+header .wrap nav .gnb{ display: flex; }
+header .wrap nav .gnb li a{ font-size: 20px; line-height: 111px; padding: 0 25px;}
+header .wrap .icons button{
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 0 17px 0 35px;
+    line-height: 33px;
+}
+
+header .wrap .icons button.all_menu{ background: url(../img/common/all_menu.png) 14px center no-repeat; }
+header .wrap .icons button.search{ background: url(../img/common/search.png) 12px center no-repeat; margin-left: 13px;}
+
+
+
+/*태블릿 너비*/
+@media screen and (max-width:1024px){
+    header{height: 112px; display: flex;}
+    header .wrap nav {display: none;}
+}
+
+/*휴대폰 너비*/
+@media screen and (max-width:768px){
+
+}
+
+footer{background-color: #2d2d2d; height: 273px; display: flex;}
+footer .wrap{display: flex; align-items: center;}
+
+footer .wrap .f_logo{margin-right: 75px;}
+
+footer .wrap .info .utill a{ color: #e5e5e5; }
+footer .wrap .info .footer_Info{ color: #a5a5a5; }
+footer .wrap .info .copy{  color: #8c8c8c; }
+
+/*휴대폰 너비*/
+@media screen and (max-width:768px){
+    footer{background-color: #2d2d2d; height: 100%; display: flex;}
+    footer .wrap{
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .wrap .f_logo{margin-right: 0; padding: 30px 0 0 0;}
+    footer .wrap .info {
+        padding: 5%;
+        font-size: 11px;
+    }
+}

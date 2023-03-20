@@ -1,0 +1,17 @@
+.sub_visual{
+    height: 180px;
+    background: url(../img/photo-1600917016506-556622b74303.jpg) center center no-repeat;
+}
+.sub_visual .wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.sub_visual .wrap h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    width: 300px;
+    border-bottom: 1px solid #fff;
+}
